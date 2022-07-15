@@ -34,7 +34,7 @@
         var book_id = $(this).attr('data-delete_book');
 
         $.ajax({
-            url: "/delete_book/",
+            url: "/delete-book",
             type: "POST",
             data: {
                 "_token": "{{ csrf_token() }}",
