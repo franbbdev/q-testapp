@@ -145,6 +145,6 @@ class Admin_RemoteLogin extends Controller
 
     public function log_out(Request $request) {
         $request->session()->flush();
-        return $this->show_login_form();
+        return Redirect::to('/login');
     }
 }
