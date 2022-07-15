@@ -38,7 +38,7 @@ Route::get('/author/{author_id}', [Admin_Authors::class, 'single_author']);
 
 Route::post('/delete-author', [Admin_Authors::class, 'delete_author']);
 
-Route::post('/delete_book', [Admin_Books::class, 'delete_book']);
+Route::post('/delete-book', [Admin_Books::class, 'delete_book']);
 
 Route::get('/add-book', [Admin_Books::class, 'show_add_book_form']);
 
